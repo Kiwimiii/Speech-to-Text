@@ -1,0 +1,127 @@
+body{
+    /* background-image: linear-gradient(rgb(190, 229, 244),rgb(48, 139, 175)); */
+    background-color: #B1DDF1;
+    /* margin: 20px; */
+    /* padding: 10px; */
+    height: 678px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    margin: 20px; 
+    padding: 10px;
+    padding-bottom:50px;
+}
+
+h1{
+    display:flex;
+    justify-content: center;
+    font-size: 40px;
+    
+}
+.container{
+    display:flex;
+    /* makes it centered */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    
+}
+
+.container > p{
+    font-size: 25px;
+}
+
+textarea{
+    width: 500px;
+    height: 10em;
+    
+    border-radius: 9px;
+}
+
+.buttons{
+    padding-top: 10px;
+    display: flex;
+    justify-items: space-evenly;
+    
+    
+   
+}
+
+.buttons > button{
+    margin: 15px;
+    padding: 8px 10px;
+    border-radius: 15px;
+    background-color:#008080;
+    border: none;
+    color: white;
+    
+}
+@keyframes spin {
+    from {rotate: 0deg;}
+    to {rotate: 360deg}
+    
+}
+.buttons > button:hover{
+    background-color:#48bbbb;
+    color: black;
+    animation-name: spin;
+    animation-duration: 0.5s;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+
+
+footer {
+      word-wrap: break-word;
+      overflow: hidden;
+    }
+
+
+@media screen and (max-width: 480px){
+    body{
+        height:max-content;
+    }
+
+    .container{
+        margin-top: 4px;
+    }
+    textarea{
+        width:300px;
+    }
+
+    .buttons > button{
+        border-radius: 20px;
+        padding: 8px 10px;
+    }
+    h1{
+        font-size: 30px;
+
+    }
+    .text{
+        font-size: 25px;
+    }
+    footer {
+        font-size: 12px;
+        height: auto;
+        padding: 10px;
+    }
+    .container > p{
+        font-size: 20px;
+    }
+    
+    
+    
+}   
